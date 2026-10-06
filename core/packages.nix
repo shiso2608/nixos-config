@@ -12,7 +12,8 @@
   # ];
   environment.systemPackages = with pkgs; [
     git
-    neovim
+    nano
+    helix
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
