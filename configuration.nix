@@ -9,6 +9,7 @@
     ./core
     ./desktop
     ./hardware
+    ./packages
     ./users
   ];
 
