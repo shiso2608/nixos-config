@@ -1,13 +1,12 @@
 { pkgs, ... }:
 
 {
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  # `passwd` でパスワードを設定するのを忘れないでください。
   users.users."user" = {
     isNormalUser = true;
     description = "user";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    #  thunderbird
     ];
   };
 }
