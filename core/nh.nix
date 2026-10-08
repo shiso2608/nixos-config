@@ -3,6 +3,7 @@
 {
   programs.nh = {
     enable = true;
+    flake = "~/nixos-config";
 
     # ガベージコレクション
     clean = {
