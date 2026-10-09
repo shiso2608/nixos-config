@@ -9,4 +9,11 @@
 
   # Home Manager 自体の管理を有効化
   programs.home-manager.enable = true;
+
+  catppuccin = {
+    enable = true;
+    autoEnable = true;
+    flavor = "mocha";
+    accent = "peach";
+  };
 }
