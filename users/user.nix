@@ -6,7 +6,9 @@
     isNormalUser = true;
     description = "user";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    ];
+    shell = pkgs.zsh;
   };
+
+  # デフォルトシェルを指定するために必要
+  programs.zsh.enable = true;
 }
