@@ -1,12 +1,16 @@
 { pkgs, ... }:
 
 {
-  programs.firefox.enable = true;
-
   environment.systemPackages = with pkgs; [
+    curl
+    ffmpegthumbnailer
+    firefox
     git
-    nano
     helix
+    nano
+    trashy
+    wget
+    wl-clipboard
   ];
 
   catppuccin = {
