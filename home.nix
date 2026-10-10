@@ -52,4 +52,6 @@
 
   programs.atuin.enable = true;
   programs.starship.enable = true;
+
+  programs.fastfetch.enable = true;
 }
