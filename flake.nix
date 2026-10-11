@@ -9,13 +9,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    noctalia = {
+      url = "github:noctalia-dev/noctalia";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     catppuccin = {
       url = "github:catppuccin/nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, noctalia, catppuccin, ... }@inputs: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -31,6 +36,7 @@
               users.user = {
                 imports = [
                   ./home.nix
+                  noctalia.homeModules.default
                   catppuccin.homeModules.catppuccin
                 ];
               };
