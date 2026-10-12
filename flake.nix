@@ -35,7 +35,7 @@
               extraSpecialArgs = { inherit inputs; };
               users.user = {
                 imports = [
-                  ./home.nix
+                  ./home
                   noctalia.homeModules.default
                   catppuccin.homeModules.catppuccin
                 ];

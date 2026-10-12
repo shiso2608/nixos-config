@@ -12,7 +12,6 @@
     ffmpegthumbnailer
     firefox
     git
-    helix
     nano
     trashy
     wget

@@ -1,19 +1,7 @@
-{ config, lib, ... }:
+{ config, ... }:
 
 {
-  home.username = "user";
-  home.homeDirectory = "/home/user";
-
-  # 互換性の維持のためのインストール時のバージョン指定
-  home.stateVersion = "26.05"; 
-
-  # Home Manager 自体の管理を有効化
   programs.home-manager.enable = true;
-
-  home.sessionVariables = {
-    EDITOR = "hx";
-    VISUAL = "hx";
-  };
 
   programs.nh = {
     enable = true;
@@ -26,27 +14,6 @@
       extraArgs = "--keep 9 --keep-since 7d --optimise";
     };
   };
-
-  wayland.windowManager.hyprland = {
-    enable = true;
-    systemd.enable = false; # systemd と UWSM の競合を回避
-    configType = "lua";
-
-    settings = {
-      on = {
-        _args = [
-          "hyprland.start"
-          (lib.generators.mkLuaInline ''
-            function()
-              hl.exec_cmd("noctalia")
-            end
-          '')
-        ];
-      };
-    };
-  };
-
-  programs.noctalia.enable = true;
 
   catppuccin = {
     enable = true;
@@ -75,4 +42,5 @@
   programs.starship.enable = true;
 
   programs.fastfetch.enable = true;
+  programs.helix.enable = true;
 }
