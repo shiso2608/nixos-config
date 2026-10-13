@@ -21,7 +21,7 @@
           "hyprland.start"
           (lib.generators.mkLuaInline ''
             function()
-              hl.exec_cmd("noctalia")
+              hl.exec_cmd("uwsm app -- noctalia")
             end
           '')
         ];
@@ -31,6 +31,12 @@
         general = {
           gaps_in = 2;
           gaps_out = 4;
+          border_size = 2;
+        
+          col = {
+            active_border   = "rgba(ff7f50aa)"; # coral
+            inactive_border = "rgba(595959aa)";
+          };
         };
       };
 
@@ -75,6 +81,27 @@
       # ];
 
       window_rule = [
+        {
+          # すべてのアプリからの最大化リクエストを無視する
+          name = "suppress-maximize-events";
+          match = {
+            class = ".*";
+          };
+          suppress_event = "maximize";
+        }
+        {
+          # XWaylandでいくつかの問題を引き起こしている問題を修正
+          name  = "fix-xwayland-drags";
+          match = {
+              class = "^$";
+              title = "^$";
+              xwayland = true;
+              float = true;
+              fullscreen = false;
+              pin = false;
+          };
+          no_focus = true;
+        }
         {
           match = {
             class = "com.obsproject.Studio";

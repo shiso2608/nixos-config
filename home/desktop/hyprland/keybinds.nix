@@ -51,7 +51,7 @@ in
   # ターミナル起動
   {
     _args = [
-      (lib.generators.mkLuaInline "mod .. \" + RETURN\"")
+      (lib.generators.mkLuaInline "mod .. \" + Q\"")
       (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"ghostty\")")
     ];
   }
@@ -114,7 +114,7 @@ in
   # ウィンドウを閉じる
   {
     _args = [
-      (lib.generators.mkLuaInline "mod .. \" + Q\"")
+      (lib.generators.mkLuaInline "mod .. \" + C\"")
       (lib.generators.mkLuaInline "hl.dsp.window.close()")
     ];
   }
@@ -123,6 +123,13 @@ in
     _args = [
       (lib.generators.mkLuaInline "mod .. \" + F\"")
       (lib.generators.mkLuaInline "hl.dsp.window.fullscreen({ mode = \"maximized\", action = \"toggle\" })")
+    ];
+  }
+  # フロート
+  {
+    _args = [
+      (lib.generators.mkLuaInline "mod .. \" + V\"")
+      (lib.generators.mkLuaInline "hl.dsp.window.float({ action = \"toggle\" })")
     ];
   }
   # ワークスペースの移動
