@@ -43,4 +43,5 @@
 
   programs.fastfetch.enable = true;
   programs.helix.enable = true;
+  programs.ghostty.enable = true;
 }

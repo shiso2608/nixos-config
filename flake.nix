@@ -26,6 +26,7 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+          noctalia.nixosModules.default
           catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager
           {
