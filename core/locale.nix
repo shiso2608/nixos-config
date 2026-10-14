@@ -21,6 +21,7 @@
     inputMethod = {
       enable = true;
       type = "fcitx5";
+      fcitx5.waylandFrontend = true;
       fcitx5.addons = with pkgs; [
         fcitx5-mozc
         fcitx5-gtk
@@ -31,6 +32,7 @@
 
   fonts = {
     packages = with pkgs; [
+      nerd-fonts.jetbrains-mono
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif

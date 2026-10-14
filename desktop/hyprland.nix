@@ -9,7 +9,7 @@
     settings = {
       default_session = {
         user = "greeter";
-        command = "${pkgs.tuigreet}/bin/tuigreet --remember --cmd 'uwsm start hyprland.desktop'";
+        command = "${pkgs.tuigreet}/bin/tuigreet --remember --cmd 'uwsm start hyprland-uwsm.desktop'";
       };
     };
   };
@@ -31,4 +31,12 @@
     enable = true;
     recommendedServices.enable = true; # サービス有効化: NetworkManager, bluetooth, UPower and a power profile daemon
   };
+
+  environment.systemPackages = with pkgs; [
+    gnome-console
+    gnome-music
+    loupe
+    nautilus
+    showtime
+  ];
 }

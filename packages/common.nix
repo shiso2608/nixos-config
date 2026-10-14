@@ -11,8 +11,10 @@
     curl
     ffmpegthumbnailer
     firefox
+    gdu
     git
     nano
+    rsync
     trashy
     wget
     wl-clipboard
