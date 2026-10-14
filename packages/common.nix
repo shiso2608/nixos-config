@@ -20,12 +20,8 @@
     wl-clipboard
   ];
 
-  catppuccin = {
-    enable = true;
-    autoEnable = true;
-    flavor = "mocha";
-    accent = "peach";
+  programs = {
+    steam.enable = true;
+    zsh.enable = true; # デフォルトシェルを指定するために必要
   };
-
-  programs.steam.enable = true;
 }
