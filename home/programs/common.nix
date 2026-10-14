@@ -20,6 +20,8 @@
     autoEnable = true;
     flavor = "mocha";
     accent = "peach";
+
+    starship.enable = false;
   };
 
   programs.zsh = {
@@ -39,7 +41,18 @@
   };
 
   programs.atuin.enable = true;
-  programs.starship.enable = true;
+
+  programs.starship = {
+    enable = true;
+    presets = [
+      "catppuccin-powerline"
+    ];
+    settings = {
+      line_break = {
+        disabled = false;
+      };
+    };
+  };
 
   programs.fastfetch.enable = true;
   programs.helix.enable = true;
