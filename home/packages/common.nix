@@ -11,7 +11,6 @@
   programs = {
     atuin.enable = true;
     home-manager.enable = true;
-    helix.enable = true;
     ghostty.enable = true;
   };
 }
