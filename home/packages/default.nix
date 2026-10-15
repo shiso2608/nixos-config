@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./btop.nix
     ./catppuccin.nix
     ./common.nix
     ./development-environment.nix
