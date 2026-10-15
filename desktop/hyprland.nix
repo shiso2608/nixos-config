@@ -31,12 +31,4 @@
     enable = true;
     recommendedServices.enable = true; # サービス有効化: NetworkManager, bluetooth, UPower and a power profile daemon
   };
-
-  environment.systemPackages = with pkgs; [
-    gnome-console
-    gnome-music
-    loupe
-    nautilus
-    showtime
-  ];
 }
