@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   programs.helix = {
@@ -50,9 +50,4 @@
       };
     };
   };
-
-  home.packages = with pkgs; [
-    nixfmt
-    nixd
-  ];
 }

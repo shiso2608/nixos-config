@@ -4,6 +4,7 @@
   imports = [
     ./catppuccin.nix
     ./common.nix
+    ./development-environment.nix
     ./fastfetch.nix
     ./helix.nix
     ./nh.nix
