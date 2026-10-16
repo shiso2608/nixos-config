@@ -9,6 +9,7 @@
     ./eza.nix
     ./fastfetch.nix
     ./ghostty.nix
+    ./git.nix
     ./helix.nix
     ./herdr.nix
     ./nh.nix

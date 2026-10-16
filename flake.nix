@@ -20,31 +20,41 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, noctalia, catppuccin, ... }@inputs: {
-    nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./configuration.nix
-          noctalia.nixosModules.default
-          catppuccin.nixosModules.catppuccin
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = { inherit inputs; };
-              users.user = {
-                imports = [
-                  ./home
-                  noctalia.homeModules.default
-                  catppuccin.homeModules.catppuccin
-                ];
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      noctalia,
+      catppuccin,
+      ...
+    }@inputs:
+    {
+      nixosConfigurations = {
+        nixos = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./configuration.nix
+            noctalia.nixosModules.default
+            catppuccin.nixosModules.catppuccin
+            home-manager.nixosModules.home-manager
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                backupFileExtension = "backup";
+                extraSpecialArgs = { inherit inputs; };
+                users.user = {
+                  imports = [
+                    ./home
+                    noctalia.homeModules.default
+                    catppuccin.homeModules.catppuccin
+                  ];
+                };
               };
-            };
-          }
-        ];
+            }
+          ];
+        };
       };
     };
-  };
 }
