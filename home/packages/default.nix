@@ -9,6 +9,7 @@
     ./eza.nix
     ./fastfetch.nix
     ./helix.nix
+    ./herdr.nix
     ./nh.nix
     ./starship.nix
     ./zsh.nix
