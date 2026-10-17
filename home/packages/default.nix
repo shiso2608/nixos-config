@@ -15,6 +15,7 @@
     ./nh.nix
     ./obs-studio.nix
     ./starship.nix
+    ./yazi.nix
     ./zsh.nix
   ];
 }
