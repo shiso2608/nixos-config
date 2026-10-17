@@ -14,6 +14,7 @@
     ./herdr.nix
     ./nh.nix
     ./obs-studio.nix
+    ./rclone.nix
     ./starship.nix
     ./yazi.nix
     ./zed-editor.nix
