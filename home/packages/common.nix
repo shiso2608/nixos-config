@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     age
+    bitwarden-desktop
     brave
     gimp
     gnome-music
