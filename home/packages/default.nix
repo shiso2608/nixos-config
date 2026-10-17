@@ -16,6 +16,7 @@
     ./obs-studio.nix
     ./starship.nix
     ./yazi.nix
+    ./zed-editor.nix
     ./zsh.nix
   ];
 }
