@@ -13,6 +13,7 @@
     ./helix.nix
     ./herdr.nix
     ./nh.nix
+    ./obs-studio.nix
     ./starship.nix
     ./zsh.nix
   ];
