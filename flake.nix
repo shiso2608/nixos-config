@@ -9,11 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    noctalia = {
-      url = "github:noctalia-dev/noctalia";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     catppuccin = {
       url = "github:catppuccin/nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -25,7 +20,6 @@
       self,
       nixpkgs,
       home-manager,
-      noctalia,
       catppuccin,
       ...
     }@inputs:
@@ -35,7 +29,6 @@
           system = "x86_64-linux";
           modules = [
             ./configuration.nix
-            noctalia.nixosModules.default
             catppuccin.nixosModules.catppuccin
             home-manager.nixosModules.home-manager
             {
@@ -47,7 +40,6 @@
                 users.user = {
                   imports = [
                     ./home
-                    noctalia.homeModules.default
                     catppuccin.homeModules.catppuccin
                   ];
                 };
