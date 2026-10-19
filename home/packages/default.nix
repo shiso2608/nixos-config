@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./age.nix
     ./btop.nix
     ./catppuccin.nix
     ./common.nix
