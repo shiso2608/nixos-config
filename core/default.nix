@@ -7,5 +7,6 @@
     ./kmscon.nix
     ./locale.nix
     ./networking.nix
+    ./usb.nix
   ];
 }
