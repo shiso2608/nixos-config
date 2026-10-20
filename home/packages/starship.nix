@@ -12,6 +12,10 @@
       line_break = {
         disabled = false;
       };
+
+      cmd_duration = {
+        show_notifications = false;
+      };
     };
   };
 }
