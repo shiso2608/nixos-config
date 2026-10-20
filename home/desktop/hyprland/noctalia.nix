@@ -1,8 +1,5 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
-let
-  wallpaperImg = "${pkgs.nixos-artwork.wallpapers.nineish-catppuccin-macchiato-alt}/share/backgrounds/nixos/nix-wallpaper-nineish-catppuccin-macchiato-alt.png";
-in
 {
   programs.noctalia = {
     enable = true;
@@ -13,22 +10,18 @@ in
         animation = {
           speed = 1.5;
         };
+
         panel = {
           launcher_placement = "attached";
         };
+
         screenshot = {
           directory = "${config.home.homeDirectory}/Pictures/Screenshots";
           filename_pattern = "%Y%m%d_%H%M%S";
         };
       };
 
-      wallpaper = {
-        enabled = true;
-        fill_mode = "crop";
-        default = {
-          path = wallpaperImg;
-        };
-      };
+      wallpaper.enabled = false;
 
       theme = {
         mode = "dark";
@@ -48,6 +41,7 @@ in
             timeout = 900;
             action = "screen_off";
           };
+
           suspend = {
             enabled = true;
             timeout = 1200;

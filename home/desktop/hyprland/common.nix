@@ -21,6 +21,7 @@
           "hyprland.start"
           (lib.generators.mkLuaInline ''
             function()
+              hl.exec_cmd("uwsm app -- hyprpaper")
               hl.exec_cmd("uwsm app -- noctalia")
             end
           '')
@@ -32,11 +33,15 @@
           gaps_in = 2;
           gaps_out = 4;
           border_size = 2;
-        
+
           col = {
-            active_border   = "rgba(ff7f50aa)"; # coral
+            active_border = "rgba(ff7f50aa)"; # coral
             inactive_border = "rgba(595959aa)";
           };
+        };
+
+        misc = {
+          disable_hyprland_logo = true;
         };
       };
 
@@ -91,14 +96,14 @@
         }
         {
           # XWaylandでいくつかの問題を引き起こしている問題を修正
-          name  = "fix-xwayland-drags";
+          name = "fix-xwayland-drags";
           match = {
-              class = "^$";
-              title = "^$";
-              xwayland = true;
-              float = true;
-              fullscreen = false;
-              pin = false;
+            class = "^$";
+            title = "^$";
+            xwayland = true;
+            float = true;
+            fullscreen = false;
+            pin = false;
           };
           no_focus = true;
         }
