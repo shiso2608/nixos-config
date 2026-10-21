@@ -43,6 +43,11 @@
         misc = {
           disable_hyprland_logo = true;
         };
+
+        input = {
+          accel_profile = "flat";
+          sensitivity = -0.3;
+        };
       };
 
       monitor = [
