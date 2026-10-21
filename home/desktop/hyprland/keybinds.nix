@@ -244,6 +244,29 @@ in
       { locked = true; }
     ];
   }
+  # 輝度調整
+  {
+    # アップ
+    _args = [
+      (lib.generators.mkLuaInline "mod .. \" + F9\"")
+      (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"noctalia msg brightness-up all 1%\")")
+      {
+        repeating = true;
+        locked = true;
+      }
+    ];
+  }
+  {
+    # ダウン
+    _args = [
+      (lib.generators.mkLuaInline "mod .. \" + F10\"")
+      (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"noctalia msg brightness-down all 1%\")")
+      {
+        repeating = true;
+        locked = true;
+      }
+    ];
+  }
 ]
 # ウィンドウフォーカス
 ++ (mkFocusBind [ "H" "LEFT" ] "left")
