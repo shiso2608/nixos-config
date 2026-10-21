@@ -60,30 +60,30 @@
         }
       ];
 
-      # workspace_rule = [
-      #   {
-      #     workspace = "1";
-      #     monitor = "DP-1";
-      #     default = true;
-      #     persistent = true;
-      #   }
-      #   {
-      #     workspace = "7";
-      #     monitor = "HDMI-A-1";
-      #     default = true;
-      #     persistent = true;
-      #   }
-      #   {
-      #     workspace = "8";
-      #     monitor = "HDMI-A-1";
-      #     persistent = true;
-      #   }
-      #   {
-      #     workspace = "9";
-      #     monitor = "HDMI-A-1";
-      #     persistent = true;
-      #   }
-      # ];
+      workspace_rule = [
+        {
+          workspace = "1";
+          monitor = "DP-1";
+          default = true;
+          persistent = true;
+        }
+        {
+          workspace = "7";
+          monitor = "HDMI-A-1";
+          default = true;
+          persistent = true;
+        }
+        {
+          workspace = "8";
+          monitor = "HDMI-A-1";
+          persistent = true;
+        }
+        {
+          workspace = "9";
+          monitor = "HDMI-A-1";
+          persistent = true;
+        }
+      ];
 
       window_rule = [
         {
