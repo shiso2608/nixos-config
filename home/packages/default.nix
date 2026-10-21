@@ -4,7 +4,6 @@
   imports = [
     ./age.nix
     ./btop.nix
-    ./catppuccin.nix
     ./common.nix
     ./development-environment.nix
     ./eza.nix
@@ -17,6 +16,7 @@
     ./obs-studio.nix
     ./rclone.nix
     ./starship.nix
+    ./theme.nix
     ./yazi.nix
     ./zed-editor.nix
     ./zsh.nix
