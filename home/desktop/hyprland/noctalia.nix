@@ -21,8 +21,6 @@
         };
       };
 
-      wallpaper.enabled = false;
-
       theme = {
         mode = "dark";
         source = "builtin";
@@ -60,6 +58,13 @@
         temperature_day = 6500;
         temperature_night = 4000;
       };
+
+      widget.network = {
+        show_label = false;
+      };
+
+      wallpaper.enabled = false;
+      weather.enabled = false;
     };
   };
 }
