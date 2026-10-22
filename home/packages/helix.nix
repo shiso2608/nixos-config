@@ -7,7 +7,7 @@
 
     settings = {
       editor = {
-        line-number = "relative";
+        line-number = "absolute";
         cursorline = true;
         indent-guides.render = true;
         end-of-line-diagnostics = "hint";
