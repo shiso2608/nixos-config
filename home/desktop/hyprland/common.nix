@@ -73,6 +73,16 @@
           persistent = true;
         }
         {
+          workspace = "2";
+          monitor = "DP-1";
+          persistent = true;
+        }
+        {
+          workspace = "3";
+          monitor = "DP-1";
+          persistent = true;
+        }
+        {
           workspace = "7";
           monitor = "HDMI-A-1";
           default = true;
