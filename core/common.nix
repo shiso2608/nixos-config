@@ -9,4 +9,5 @@
   ];
   # Electron, Chromium 互換
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  services.fwupd.enable = true;
 }
