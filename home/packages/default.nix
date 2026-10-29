@@ -14,6 +14,7 @@
     ./herdr.nix
     ./nh.nix
     ./obs-studio.nix
+    ./ollama.nix
     ./rclone.nix
     ./starship.nix
     ./theme.nix
