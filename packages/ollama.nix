@@ -5,7 +5,6 @@
     enable = true;
     package = pkgs.ollama-rocm;
     rocmOverrideGfx = "11.0.0";
-    syncModels = true;
 
     loadModels = [
       "qwen3.5:9b-q4_K_M"
