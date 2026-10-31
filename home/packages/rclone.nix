@@ -11,7 +11,6 @@
       Projects/**
       Videos/**
       .config/age/**
-      .sec/**
     '';
   };
 
