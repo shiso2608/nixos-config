@@ -5,6 +5,7 @@
     bitwarden-desktop
     brave
     gimp
+    google-chrome
     kdePackages.kdenlive
     libreoffice
     loupe
