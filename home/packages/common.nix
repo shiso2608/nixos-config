@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     bitwarden-desktop
-    brave
+    # brave
     gimp
     google-chrome
     kdePackages.kdenlive
