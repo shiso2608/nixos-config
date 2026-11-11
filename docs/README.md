@@ -4,7 +4,8 @@ NixOS の設定ファイル。
 
 ## インストール
 
-- [インストールメディア作成](installation-media.md)
+1. [インストールメディア作成](installation-media.md)
+2. [インストール](install.md)
 
 ## ディレクトリ構造
 
