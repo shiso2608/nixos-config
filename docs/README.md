@@ -6,6 +6,7 @@ NixOS の設定ファイル。
 
 1. [インストールメディア作成](installation-media.md)
 2. [インストール](install.md)
+3. [環境の再構築](rebuild_the_environment.md)
 
 ## ディレクトリ構造
 
