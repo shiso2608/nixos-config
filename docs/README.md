@@ -8,6 +8,10 @@ NixOS の設定ファイル。
 2. [インストール](install.md)
 3. [環境の再構築](rebuild_the_environment.md)
 
+## メンテナンス
+
+[メンテナンス](maintenance.md)
+
 ## ディレクトリ構造
 
 ```
