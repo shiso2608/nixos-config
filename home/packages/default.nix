@@ -12,7 +12,6 @@
     ./git.nix
     ./helix.nix
     ./herdr.nix
-    ./nh.nix
     ./obs-studio.nix
     ./ollama.nix
     ./rclone.nix

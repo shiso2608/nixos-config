@@ -1,9 +1,9 @@
-{ config, ... }:
+{ ... }:
 
 {
   programs.nh = {
     enable = true;
-    flake = "${config.home.homeDirectory}/nixos-config";
+    flake = "/home/user/nixos-config";
 
     # ガベージコレクション
     clean = {
