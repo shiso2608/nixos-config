@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   catppuccin = {
@@ -10,4 +10,6 @@
     cursors.enable = true;
     starship.enable = false;
   };
+
+  home.pointerCursor.enable = true;
 }
