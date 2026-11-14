@@ -8,7 +8,6 @@
     kdePackages.kdenlive
     libreoffice
     librewolf
-    protonmail-desktop
     super-productivity
     thunderbird
   ];
