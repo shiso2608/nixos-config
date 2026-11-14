@@ -71,6 +71,10 @@ nix-list
 systemctl list-timers
 ```
 
+> [!TIP]
+> UNIT の **nix-gc.timer** がガベージコレクションのタイマー。  
+> NEXT: **次回実行日時**, LAST: **前回実行日時**。
+
 ## 設定参照
 
 - [コマンドエイリアス](../home/common.nix)
