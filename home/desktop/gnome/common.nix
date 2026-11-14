@@ -31,5 +31,13 @@
       accel-profile = "flat";
       speed = -0.3;
     };
+
+    # ファイル履歴とゴミ箱
+    "org/gnome/desktop/privacy" = {
+      remember-recent-files = false;
+      remove-old-trash-files = true;
+      remove-old-temp-files = true;
+      old-files-age = lib.hm.gvariant.mkUint32 30;
+    };
   };
 }
