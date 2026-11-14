@@ -3,7 +3,8 @@
 ## 目次
 
 - [アップデート](#アップデート)
-- [プロファイル管理](#プロファイル管理)
+- [プロファイル (世代) 管理](#プロファイル-世代-管理)
+- [設定参照](#設定参照)
 
 ## アップデート
 
@@ -43,9 +44,6 @@ nix-dry-activate
 nix-boot
 ```
 
-> [!NOTE]
-> エイリアスの詳細は [home/common.nix](../home/common.nix) を参照。
-
 5. PC を再起動する
 6. コミットする
 
@@ -59,13 +57,21 @@ git commit
 git push
 ```
 
-## プロファイル管理
+## プロファイル (世代) 管理
 
-> [!NOTE]
-> ガベージコレクションには **NH** を使用している。  
-> 設定は [core/nh.nix](../core/nh.nix) を参照。
+- プロファイルリストを確認する
 
-- 世代リストを確認する
 ```bash
-sudo nix-env --profile /nix/var/nix/profiles/system --list-generations
+nix-list
 ```
+
+- ガベージコレクションのタイマーを確認する
+
+```bash
+systemctl list-timers
+```
+
+## 設定参照
+
+- [コマンドエイリアス](../home/common.nix)
+- [ガベージコレクション](../core/garbage-collection.nix)
