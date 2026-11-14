@@ -2,8 +2,9 @@
 
 {
   imports = [
-    ./desktop
-    ./packages
     ./common.nix
+    ./desktop
+    ./display-brightness.nix
+    ./packages
   ];
 }
