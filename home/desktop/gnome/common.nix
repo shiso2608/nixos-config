@@ -20,6 +20,12 @@
       sleep-inactive-ac-timeout = 1500;
     };
 
+    # 外観
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      accent-color = "orange";
+    };
+
     # マウス
     "org/gnome/desktop/peripherals/mouse" = {
       accel-profile = "flat";
