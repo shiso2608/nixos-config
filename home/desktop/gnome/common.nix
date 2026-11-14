@@ -39,5 +39,10 @@
       remove-old-temp-files = true;
       old-files-age = lib.hm.gvariant.mkUint32 30;
     };
+
+    # カメラ
+    "org/gnome/desktop/privacy" = {
+      disable-camera = true;
+    };
   };
 }
