@@ -6,4 +6,11 @@
 
   # 互換性の維持のためのインストール時のバージョン指定
   home.stateVersion = "26.05";
+
+  home.shellAliases = {
+    nix-switch = "sudo nixos-rebuild switch --flake .#";
+    nix-boot = "sudo nixos-rebuild boot --flake .#";
+    nix-dry-build = "sudo nixos-rebuild dry-build --flake .#";
+    nix-dry-activate = "sudo nixos-rebuild dry-activate --flake .#";
+  };
 }

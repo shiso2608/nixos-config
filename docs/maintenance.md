@@ -27,17 +27,24 @@ git add .
 
 4. アップデートする
 
-- ドライランでエラーが発生しないかを確認する
+- ドライランで警告、エラーが発生しないかを確認する
 
 ```bash
-nh os boot --dry
+nix-dry-build
+```
+
+```bash
+nix-dry-activate
 ```
 
 - アップデートを実施する
 
 ```bash
-nh os boot
+nix-boot
 ```
+
+> [!NOTE]
+> エイリアスの詳細は [home/common.nix](../home/common.nix) を参照。
 
 5. PC を再起動する
 6. コミットする
