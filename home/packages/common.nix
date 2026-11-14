@@ -16,6 +16,7 @@
   programs = {
     atuin.enable = true;
     home-manager.enable = true;
+    nh.enable = true;
     prismlauncher.enable = true;
   };
 }
