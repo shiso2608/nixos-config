@@ -10,6 +10,16 @@
       night-light-temperature = lib.hm.gvariant.mkUint32 3200;
     };
 
+    # 自動画面ブランク
+    "org/gnome/desktop/session" = {
+      idle-delay = lib.hm.gvariant.mkUint32 1200;
+    };
+
+    # 自動サスペンド
+    "org/gnome/settings-daemon/plugins/power" = {
+      sleep-inactive-ac-timeout = 1500;
+    };
+
     # マウス
     "org/gnome/desktop/peripherals/mouse" = {
       accel-profile = "flat";
