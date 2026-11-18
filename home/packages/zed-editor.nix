@@ -6,6 +6,7 @@
 
     extensions = [
       "nix"
+      "toml"
     ];
 
     userSettings = {
