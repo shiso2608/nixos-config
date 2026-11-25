@@ -7,6 +7,7 @@
     flavor = "mocha";
     accent = "peach";
 
+    grub.enable = false;
     tty.enable = false;
   };
 }
