@@ -16,6 +16,7 @@ NixOS の設定ファイル。
 ## メモ
 
 - [ファイル共有 (デュアルブート)](file-sharing-dualboot.md)
+- [OBS Studio 設定](obs-studio.md)
 
 ## ディレクトリ構造
 
