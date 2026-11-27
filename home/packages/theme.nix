@@ -6,7 +6,5 @@
     autoEnable = true;
     flavor = "mocha";
     accent = "peach";
-
-    starship.enable = false;
   };
 }

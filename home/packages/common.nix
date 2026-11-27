@@ -17,5 +17,6 @@
     home-manager.enable = true;
     nh.enable = true;
     prismlauncher.enable = true;
+    starship.enable = true;
   };
 }

@@ -15,7 +15,6 @@
     ./obs-studio.nix
     ./ollama.nix
     ./rclone.nix
-    ./starship.nix
     ./theme.nix
     ./yazi.nix
     ./zed-editor.nix
