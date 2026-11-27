@@ -12,6 +12,9 @@ NixOS の設定ファイル。
 
 - [バックアップ](backup.md)
 - [アップデート](update.md)
+
+## メモ
+
 - [ファイル共有 (デュアルブート)](file-sharing-dualboot.md)
 
 ## ディレクトリ構造
